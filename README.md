@@ -17,11 +17,11 @@
 
 ## Работа с данными
 
-Для того, чтобы создавать, сохранять и получать добавленные привычки, нужно использовать файл HabitsStore.swift. Он содержит два класса:
+Для того, чтобы создавать, сохранять и получать добавленные привычки, нужно использовать файл [HabitsStore.swift](./HabitsStore.swift). Он содержит два класса:
 
 - Класс Habit позволяет сохранять и обновлять данные для одной привычки: название, цвет, время выполнения и т.д.;
 
-- Класс HabitsStore позволяет сохранять и получать сохранённые привычки. Для использования HabitsStore в разных модулях приложения нужно использовать HabitsStore.shared свойство, например:
+- Класс HabitsStore позволяет сохранять и получать сохранённые привычки. Для использования HabitsStore в разных модулях приложения нужно использовать [HabitsStore.shared](https://github.com/netology-code/iosui-diplom/blob/054f1f15e9ccd8d8dc7b938c367a04010d4778a7/HabitsStore.swift#L95) свойство, например:
 
   ```swift
   let store = HabitsStore.shared
@@ -40,7 +40,7 @@
 
 1. Создайте iOS проект и назовите его MyHabits, добавьте поддержку iPad.
 2. Добавьте иконку приложения и обновите Splash Screen согласно макетам.
-3. Добавьте класс HabitsStore.swift.
+3. Добавьте класс [HabitsStore.swift](./HabitsStore.swift).
 4. Проверьте, что проект собирается без ошибок.
 
 ### Добавление базовой навигации
@@ -80,16 +80,16 @@ store.habits.append(newHabit)
 
 1. На экран HabitsViewController добавьте UICollectionView, которая должна показывать:
 
-- Ячейку ProgressCollectionViewCell, которая показывает прогресс за сегодняшний день. Данные для отображения можно получить из свойства `HabitsStore.shared.todayProgress`;
-- Ячейки HabitCollectionViewCell для показа добавленных привычек. Данные о привычках можно получить из свойства `HabitsStore.shared.habits`.
+- Ячейку ProgressCollectionViewCell, которая показывает прогресс за сегодняшний день. Данные для отображения можно получить из свойства [HabitsStore.shared.todayProgress](https://github.com/netology-code/iosui-diplom/blob/054f1f15e9ccd8d8dc7b938c367a04010d4778a7/HabitsStore.swift#L111);
+- Ячейки HabitCollectionViewCell для показа добавленных привычек. Данные о привычках можно получить из свойства [HabitsStore.shared.habits](https://github.com/netology-code/iosui-diplom/blob/054f1f15e9ccd8d8dc7b938c367a04010d4778a7/HabitsStore.swift#L95).
 
-2. Цветной круг в ячейке привычки показывает, была ли сегодня затрекана привычка. При нажатии на круг должно измениться его состояние (заливка цветом и иконка галочки). Также нужно сохранить время привычки с помощью функции `HabitsStore.shared.track()`. Каждый день можно добавить только одно время для одной привычки. Проверить это условие можно с помощью свойства `isAlreadyTakenToday`.
+2. Цветной круг в ячейке привычки показывает, была ли сегодня затрекана привычка. При нажатии на круг должно измениться его состояние (заливка цветом и иконка галочки). Также нужно сохранить время привычки с помощью функции [HabitsStore.shared.track()](https://github.com/netology-code/iosui-diplom/blob/054f1f15e9ccd8d8dc7b938c367a04010d4778a7/HabitsStore.swift#L139). Каждый день можно добавить только одно время для одной привычки. Проверить это условие можно с помощью свойства [isAlreadyTakenToday](https://github.com/netology-code/iosui-diplom/blob/054f1f15e9ccd8d8dc7b938c367a04010d4778a7/HabitsStore.swift#L39).
 3. Прогресс в ProgressCollectionViewCell должен всегда показывать актуальное состояние и обновляться при добавлении времени любой привычки.
 4. После добавления новой привычки и закрытия HabitViewController новая привычка должна появляться в списке.
 
 ### Показ данных о выбранной привычке
 
-1. Добавьте HabitDetailsViewController с вёрсткой согласно макетам. Список нужно сделать с помощью UITableView. Данные для списка можно получить из свойства `HabitsStore.shared.dates`. Для того, чтобы показать, была ли привычка затрекана в дату из списка, нужно использовать функцию `HabitsStore.shared.habit(_:isTrackedIn:)`.
+1. Добавьте HabitDetailsViewController с вёрсткой согласно макетам. Список нужно сделать с помощью UITableView. Данные для списка можно получить из свойства [HabitsStore.shared.dates](https://github.com/netology-code/iosui-diplom/blob/054f1f15e9ccd8d8dc7b938c367a04010d4778a7/HabitsStore.swift#L102). Для того, чтобы показать, была ли привычка затрекана в дату из списка, нужно использовать функцию [HabitsStore.shared.habit(_:isTrackedIn:)](https://github.com/netology-code/iosui-diplom/blob/054f1f15e9ccd8d8dc7b938c367a04010d4778a7/HabitsStore.swift#L158).
 
 ### Редактирование и удаление добавленной привычки
 

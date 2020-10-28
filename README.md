@@ -56,7 +56,7 @@
 ### Создание проекта
 
 1. Создайте iOS проект и назовите его MyHabits, добавьте поддержку iPad.
-2. Добавьте [иконку приложения](./Design/AppIcon.appiconset) и обновите Splash Screen согласно [макетам](.Design/SplashScreen).
+2. Добавьте [иконку приложения](./Design/AppIcon.appiconset) и обновите Splash Screen согласно [макетам](./Design/SplashScreen).
 
 <p align="center" width="100%">
   <img width="33%" src="./Design/SplashScreen/SplashScreen.png"> 
@@ -79,7 +79,7 @@
 
 ### Добавление экрана с информацией
 
-1. На экран InfoViewController добавить информацию о привычках согласно [макетам](.Design/Info). Если текст не влезает на экран, он должен скроллиться.
+1. На экран InfoViewController добавить информацию о привычках согласно [макетам](./Design/Info). Если текст не влезает на экран, он должен скроллиться.
 
    <p align="center" width="100%">
      <img width="33%" src="./Design/Info/Info.png"> 
@@ -87,7 +87,7 @@
 
 ### Добавление новой привычки
 
-1. Добавьте экран HabitViewController с версткой согласно [макетам](.Design/Habit/Создание).
+1. Добавьте экран HabitViewController с версткой согласно [макетам](./Design/Habit/Создание).
 
    <p align="center" width="100%">
      <img width="33%" src="./Design/Habit/Создание/Habit_create.png"> 
@@ -129,7 +129,7 @@ store.habits.append(newHabit)
 
 ### Показ данных о выбранной привычке
 
-1. Добавьте HabitDetailsViewController с вёрсткой согласно [макетам](.Design/HabitDetails). Список нужно сделать с помощью UITableView. Данные для списка можно получить из свойства [HabitsStore.shared.dates](https://github.com/netology-code/iosui-diplom/blob/054f1f15e9ccd8d8dc7b938c367a04010d4778a7/HabitsStore.swift#L102). Для того чтобы показать, была ли привычка затрекана в дату из списка, нужно использовать функцию [HabitsStore.shared.habit(_:isTrackedIn:)](https://github.com/netology-code/iosui-diplom/blob/054f1f15e9ccd8d8dc7b938c367a04010d4778a7/HabitsStore.swift#L158).
+1. Добавьте HabitDetailsViewController с вёрсткой согласно [макетам](./Design/HabitDetails). Список нужно сделать с помощью UITableView. Данные для списка можно получить из свойства [HabitsStore.shared.dates](https://github.com/netology-code/iosui-diplom/blob/054f1f15e9ccd8d8dc7b938c367a04010d4778a7/HabitsStore.swift#L102). Для того чтобы показать, была ли привычка затрекана в дату из списка, нужно использовать функцию [HabitsStore.shared.habit(_:isTrackedIn:)](https://github.com/netology-code/iosui-diplom/blob/054f1f15e9ccd8d8dc7b938c367a04010d4778a7/HabitsStore.swift#L158).
 
    <p align="center" width="100%">
      <img width="33%" src="./Design/HabitDetails/HabitDetails.png"> 

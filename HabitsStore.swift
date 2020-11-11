@@ -134,6 +134,17 @@ public final class HabitsStore {
     
     // MARK: - Lifecycle
     
+    /// Сохраняет все изменения в привычках в UserDefaults.
+    public func save() {
+        do {
+            let data = try encoder.encode(habits)
+            userDefaults.setValue(data, forKey: "habits")
+        }
+        catch {
+            print("Ошибка кодирования привычек для сохранения", error)
+        }
+    }
+    
     /// Добавляет текущую дату в trackDates для переданной привычки.
     /// - Parameter habit: Привычка, в которую добавится новая дата.
     public func track(_ habit: Habit) {
@@ -181,16 +192,6 @@ public final class HabitsStore {
         }
         catch {
             print("Ошибка декодирования сохранённых привычек", error)
-        }
-    }
-    
-    private func save() {
-        do {
-            let data = try encoder.encode(habits)
-            userDefaults.setValue(data, forKey: "habits")
-        }
-        catch {
-            print("Ошибка кодирования привычек для сохранения", error)
         }
     }
 }

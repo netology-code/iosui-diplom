@@ -50,6 +50,7 @@ public final class Habit: Codable {
     
     private lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "ru_RU")
         formatter.timeStyle = .short
         return formatter
     }()

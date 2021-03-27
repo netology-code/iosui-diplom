@@ -56,7 +56,7 @@
 ### Создание проекта
 
 1. Создайте iOS-проект и назовите его MyHabits, добавьте поддержку iPad.
-2. Добавьте [иконку приложения](./Design/AppIcon.appiconset) и обновите Splash Screen согласно [макетам](./Design/SplashScreen).
+2. Добавьте [иконку приложения](./Design/AppIcon.appiconset) и обновите LaunchScreen согласно [макетам](./Design/SplashScreen).
 
 <p align="center" width="100%">
   <img width="33%" src="./Design/SplashScreen/SplashScreen.png"> 

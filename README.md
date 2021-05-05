@@ -41,7 +41,7 @@
 
 ## Работа с дизайном
 
-Макеты всех экранов находятся в [Figma](https://www.figma.com/file/LSFWbwp1h8uAZ6NVbSyjHZ/Habit-tracker-Figma-Interactive). Все стили текста и цвета приложения располагаются на отдельном слое [UI Kit](https://www.figma.com/file/LSFWbwp1h8uAZ6NVbSyjHZ/Habit-tracker-Figma-Interactive?node-id=101%3A2808). В реализации навигации приложения вам поможет интерактивные [прототип](https://www.figma.com/proto/LSFWbwp1h8uAZ6NVbSyjHZ/Habit-tracker-Figma-Interactive?scaling=scale-down&page-id=0%3A1&node-id=101%3A1882).
+Макеты всех экранов находятся в [Figma](https://www.figma.com/file/LSFWbwp1h8uAZ6NVbSyjHZ/Habit-tracker-Figma-Interactive). Все стили текста и цвета приложения располагаются на отдельном слое [UI Kit](https://www.figma.com/file/LSFWbwp1h8uAZ6NVbSyjHZ/Habit-tracker-Figma-Interactive?node-id=101%3A2808). В реализации навигации приложения вам поможет интерактивный [прототип](https://www.figma.com/proto/LSFWbwp1h8uAZ6NVbSyjHZ/Habit-tracker-Figma-Interactive?scaling=scale-down&page-id=0%3A1&node-id=101%3A1882).
 
 ## Реализация проекта
 

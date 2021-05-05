@@ -11,7 +11,7 @@
 - Использование UITableView, UICollectionView и кастомных ячеек.
 
   <p align="center" width="100%">
-    <img width="75%" src="./Design/promo.png"> 
+    <img width="75%" src="./Assets/promo.png"> 
   </p>
 
 ## Требования к проекту

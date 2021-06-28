@@ -107,7 +107,6 @@ public final class HabitsStore {
         return Date.dates(from: startDate, to: .init())
     }
     
-    /// Прогресс выполнения добавленных привычек. Привычка считается выполненной, если пользователь добавлял время больше 5 раз.
     /// Возвращает значение от 0 до 1.
     public var todayProgress: Float {
         guard habits.isEmpty == false else {
